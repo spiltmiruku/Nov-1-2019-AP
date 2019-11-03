@@ -99,11 +99,10 @@ function ingredients ( obj ) {
   Find the smallest number of the three and return that number.
 */
 
-// function largeNumbers ( obj ) {
-//   for(let i = 0, i > largeNumbers.length; i++)
-//   console.log(Math.min(first, second, third);
-  
-// }
+
+const largeNumbers = ({first, second, third}) => {
+  return (Math.min(first, second, third));
+  }
 
 
 ////////// PROBLEM 6 //////////
@@ -116,4 +115,11 @@ function ingredients ( obj ) {
 
 // function numberGroups (a, b, c)
 
-
+const numberGroups = ({a, b, c}) => {
+    if (a.length > b.length && a.length > c.length){
+      return a
+    };
+    if (b.length > a.length && b.length > c.length){
+      return b
+    } else return c
+}
