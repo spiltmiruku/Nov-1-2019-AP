@@ -61,6 +61,16 @@ function employeeUpdater () {
 }
 
 
+// function employeeUpdater(){
+//   for(let i = 0; i < employees.length; i++){
+//     if(employees[i].firstName === 'Theo'){
+//       employees.length(i, 1)
+//     } else if(employees[i].firstName === 'Lorie'){
+//       employees[i].department = "HR"
+//     }
+//   }return employees;
+// }
+
 
 ////////// PROBLEM 2 //////////
 
@@ -186,3 +196,17 @@ var looper = () => {
   };return numsArr;
 };
 
+
+
+// function looper(){
+//   for(let i = 0; i < numsArr.length; i++){
+//     for(let j = 0; j <numsArr[i].length; j++){
+//       if(numsArr[i][j] % 2 === 1){
+//         numsArr[i][j] = 'odd'
+//         }else{
+//         numsArr[i][j] = 'even'
+//       }
+//     }
+//   }
+//   return numsArr;
+// }
