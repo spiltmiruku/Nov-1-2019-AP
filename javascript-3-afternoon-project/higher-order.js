@@ -82,7 +82,8 @@ let totalPopulation = populations.reduce((el, acc) => {
   return acc + el;
 }, 0);
 
-
+// let totalPopulation = populations.reduce((tot,el) => tot += el, 0)
+//NOTES: acc = accumulator is what you set the starting value to, if you start from 0, it will add it from 0
 
 ////////// PROBLEM 4 //////////
 
@@ -121,9 +122,7 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 /*
   Use a higher order method to get all the order totals after adding in the sales tax. Your answer should be an array of numbers, one total for each order.
 */
-
-let orderTotals // Code here
-
+let orderTotals = orders.map(el => el.price * (1 + el.tax));
 
 
 ////////// PROBLEM 6 //////////
@@ -142,6 +141,5 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method to create to get the sum of bobsTotal.
 */
 
-let bobsTotal //Code Here
-
+let bobsTotal = purchases.filter(el => el.owner === "Bob").reduce((tot,el) => tot + el.price, 0)
 
