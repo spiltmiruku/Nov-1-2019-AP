@@ -21,8 +21,24 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 //Code Here
-let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
 
+
+let evenNumbers = mixedNumbers.filter(el => el % 2 === 0)
+
+// let evenNumbers = mixedNumbers.filter(function(el,i,arr){
+//   return el % 2 === 0
+// })
+
+// Long version
+// function even(arr) {
+//   let newArr = []
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0){
+//       newArr.push(arr[i])
+//     }
+//   } return newArr
+// }
+// console.log(even(mixedNumbers))
 
 
 ////////// PROBLEM 2 //////////
@@ -91,9 +107,9 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 //Code Here
 let myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
 
-let myStrongest = monstersInYourPocket.filter(element => element.CP > 200);
+// let myStrongest = monstersInYourPocket.filter(element => element.CP > 200);
 
-console.log(myStrongest)
+// console.log(myStrongest)
 
 
 
